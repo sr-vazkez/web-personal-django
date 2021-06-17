@@ -17,21 +17,12 @@ def home(request):
 
 
 def about(request):
-    return HttpResponse(html_base + """
-                         <h2>Acerca de Mi</h2>
-                         <p>Texto chingon</p>
-                         """)
+    return render(request, "core/home.html")
 
 
 def portafolio(request):
-    return HttpResponse(html_base + """
-                         <h2>Portafolio</h2>
-                         <p>Texto chingon</p>
-                         """)
+    return render(request, "core/home.html")
 
 
 def contact(request):
-    return HttpResponse(html_base + """
-                         <h2>Contactame</h2>
-                         <p>Texto chingon</p>
-                         """)
+    return render(request, "core/home.html")
