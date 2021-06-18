@@ -5,5 +5,5 @@ from .models import Project
 
 
 def portafolio(request):
-    projects = Project.objects.all()
+    projects = Project.objects.all().order_by('-created')
     return render(request, "portafolio/portafolio.html", {'projects': projects})
