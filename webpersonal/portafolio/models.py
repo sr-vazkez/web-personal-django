@@ -14,3 +14,6 @@ class Project(models.Model):
         verbose_name = "Proyecto"
         verbose_name_plural = "Proyectos"
         ordering = ["-created"]
+
+    def __str__(self):
+        return self.title
